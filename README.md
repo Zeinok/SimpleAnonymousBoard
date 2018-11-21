@@ -1,6 +1,6 @@
 # SimpleAnonymousBoard
 
-Remember to do `pip freeze > requiments.txt` when you install a new package!
+Remember to do `pip freeze > requirements.txt` when you install a new package!
 
-to install, do `pip install -r requiments.txt`
+to install, do `pip install -r requirements.txt`
 
