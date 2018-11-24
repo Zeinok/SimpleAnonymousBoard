@@ -9,8 +9,8 @@
 	<body>
 		<form class="msgform" action="/submit" method="POST">
 			{% csrf_token %}
-			<input class="username" type="text" name="username" placeholder="username#password" />
-			<input class="msginput" type="text" name="msg" placeholder="Message here"/>
+			<input class="username" type="text" name="username" placeholder="username#password"/>
+			<input class="msginput" type="text" name="msg" placeholder="Message here" autocomplete="off"/>
 			<button class="button" type="submit">Send</button>
 		</form>
 		<hr>
