@@ -20,6 +20,6 @@ from SimpleAnonymousBoard.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', viewMessages),
-    url(r'^/submit', sendMessage),
+    url(r'^submit$', sendMessage),
 ]
 
