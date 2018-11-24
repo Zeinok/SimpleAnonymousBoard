@@ -7,6 +7,7 @@
 	<body>
 		<form action="/submit" method="POST">
 			{% csrf_token %}
+			<input type="text" name="username" />
 			<input type="text" name="msg" />
 			<button type="submit">Send</button>
 		</form>
@@ -21,3 +22,4 @@
 		{% endif %}
 	</body>
 </html>
+
