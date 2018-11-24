@@ -7,6 +7,6 @@ from django.db import models
 
 class Messages(models.Model):
     MsgId = models.AutoField(primary_key=True)
-    Unixtime = models.IntegerField()
+    Unixtime = models.BigIntegerField()
     Username = models.CharField(max_length=20)
-    MessagesString = models.CharField(max_length=100)
+    MessageString = models.CharField(max_length=100)
