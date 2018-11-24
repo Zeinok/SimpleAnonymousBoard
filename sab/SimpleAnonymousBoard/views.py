@@ -12,7 +12,7 @@ from SimpleAnonymousBoard.models import Message
 # Create your views here.
 
 def viewMessages(request):
-    messages = Message.objects.all()
+    messages = Message.objects.order_by('-MsgId').all()
     return render(request, 'html/base.html', locals())
 
 def sendMessage(request):
