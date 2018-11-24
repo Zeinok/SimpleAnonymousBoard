@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 	<head>
 		<title>Simple Anonymous Message Board</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" /> 
 	</head>
 	<body>
-		<form action="/submit" method="POST">
+		<form class="msgform" action="/submit" method="POST">
 			{% csrf_token %}
-			<input type="text" name="username" placeholder="username#password" />
-			<input type="text" name="msg" placeholder="Message here"/>
-			<button type="submit">Send</button>
+			<input class="username" type="text" name="username" placeholder="username#password" />
+			<input class="msginput" type="text" name="msg" placeholder="Message here"/>
+			<button class="button" type="submit">Send</button>
 		</form>
 		<hr>
 		{% if messages %}
