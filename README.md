@@ -1,6 +1,11 @@
 # SimpleAnonymousBoard
 
-Remember to do `pip freeze > requirements.txt` when you install a new package!
+# Installation
+`pip install -r requirements.txt`
 
-to install, do `pip install -r requirements.txt`
+# Start
+
+`./sab/manage.py runserver`
+
+
 
