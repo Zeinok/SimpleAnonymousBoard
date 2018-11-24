@@ -5,7 +5,7 @@ from django.db import models
 
 # Create your models here.
 
-class Messages(models.Model):
+class Message(models.Model):
     MsgId = models.AutoField(primary_key=True)
     Unixtime = models.BigIntegerField()
     Username = models.CharField(max_length=20)

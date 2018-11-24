@@ -23,7 +23,7 @@ def sendMessage(request):
             hashlib = __import__('hashlib')
             time = __import__('time')
             inputName = request.POST['username']
-            username, password = inputname.split('#',1)
+            username, password = inputName.split('#',1)
             username = username[:12]
             h = hashlib.sha512()
             h.update(inputName)
