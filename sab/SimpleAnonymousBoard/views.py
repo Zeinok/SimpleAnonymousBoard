@@ -32,6 +32,6 @@ def sendMessage(request):
             msg.Unixtime = int(time.time())
             msg.Username = '%s#%s' % ( username, h.hexdigest()[7] )
             msg.MessageString = request.POST['msg']
-            Message.objects.add(msg)
+            msg.save()
             return redirect('/')
 
