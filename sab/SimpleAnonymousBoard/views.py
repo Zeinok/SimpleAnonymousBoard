@@ -30,7 +30,7 @@ def sendMessage(request):
             h.update('howD0Y0uKn0wTheS@lt0w0')
             msg = Message()
             msg.Unixtime = int(time.time())
-            msg.Username = '%s#%s' % ( username, h.hexdigest()[7] )
+            msg.Username = '%s#%s' % ( username, h.hexdigest()[:7] )
             msg.MessageString = request.POST['msg']
             msg.save()
             return redirect('/')
