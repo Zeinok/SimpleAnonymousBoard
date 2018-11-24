@@ -13,7 +13,7 @@ from SimpleAnonymousBoard.models import Message
 
 def viewMessages(request):
     messages = Message.objects.all()
-    return render(request, 'templates/base.html', locals())
+    return render(request, 'html/base.html', locals())
 
 def sendMessage(request):
     if request.method == 'GET':
